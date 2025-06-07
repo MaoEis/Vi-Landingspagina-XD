@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Vi is your mental wellness companion for daily balance through mindfulness, movement, connection and skills." />
-    <meta name="keywords" content="mental health, self-care app, Vi, mindfulness, activity suggestions" />
+    <meta
+      name="description"
+      content="Vi is your mental wellness companion for daily balance through mindfulness, movement, connection and skills."
+    />
+    <meta
+      name="keywords"
+      content="mental health, self-care app, Vi, mindfulness, activity suggestions"
+    />
 
     <title>ViWelcomesYou</title>
     <link rel="stylesheet" href="css/normalise.css" />
@@ -21,8 +27,10 @@
       src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
       defer
     ></script>
-    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"
+    />
   </head>
   <body>
     <main>
@@ -139,7 +147,7 @@
     <section class="downloadOne">
       <img
         class="downloadImage"
-        src="./assets/downloadNow.png"
+        src="./assets/downloadNow.webp"
         alt="downloadNow"
       />
       <div class="downloadOneContent">
@@ -162,19 +170,21 @@
             <p class="amount">€0/</p>
             <p class="perMonth">per month</p>
           </div>
-          <p class="included">What is included?</p>
-          <ul class="features">
-            <li class="feature">
-              Daily activity suggestions based on how you feel
-            </li>
-            <li class="feature">Simple mood and energy tracking</li>
-            <li class="feature">
-              Support across four gentle pillars: Mindfulness, Movement,
-              Connection & Skills
-            </li>
-            <li class="feature">An in-app agenda to plan your activities</li>
-            <li class="feature">Insights into your mood and energy trends</li>
-          </ul>
+          <div>
+            <p class="included">What is included?</p>
+            <ul class="features">
+              <li class="feature">
+                Daily activity suggestions based on how you feel
+              </li>
+              <li class="feature">Simple mood and energy tracking</li>
+              <li class="feature">
+                Support across four gentle pillars: Mindfulness, Movement,
+                Connection & Skills
+              </li>
+              <li class="feature">An in-app agenda to plan your activities</li>
+              <li class="feature">Insights into your mood and energy trends</li>
+            </ul>
+          </div>
           <a class="downloadNowBtnless" href="#">Download App Now</a>
         </div>
         <div class="premium">
@@ -183,13 +193,15 @@
             <p class="amount">€3,99/</p>
             <p class="perMonth">per month</p>
           </div>
-          <p class="included">What is included?</p>
-          <ul class="features">
-            <li class="feature">Deeper insights</li>
-            <li class="feature">Advanced filters</li>
-            <li class="feature">Expanded activity library</li>
-            <li class="feature">More control and customisation</li>
-          </ul>
+          <div>
+            <p class="included">What is included?</p>
+            <ul class="features">
+              <li class="feature">Deeper insights</li>
+              <li class="feature">Advanced filters</li>
+              <li class="feature">Expanded activity library</li>
+              <li class="feature">More control and customisation</li>
+            </ul>
+          </div>
           <a class="downloadNowBtn" href="#">Download App Now</a>
         </div>
       </div>
@@ -203,8 +215,16 @@
         world expects. Available on both iOS and Android.
       </p>
       <div class="downloadImages">
-        <a href="#"><img src="./assets/appleStore.png" alt="App Store" /></a>
-        <a href="#"><img src="./assets/googleStore.png" alt="Google Play" /></a>
+        <a href="#"
+          ><img
+            src="./assets/appstore.svg"
+            alt="Download on the App Store store"
+        /></a>
+        <a href="#"
+          ><img
+            src="./assets/playstore.svg"
+            alt="Download on the Google Play store"
+        /></a>
       </div>
     </section>
 
@@ -212,41 +232,41 @@
       <div class="followusContent">
         <h1 class="followus">Follow Us</h1>
         <div class="socialIcons">
-            <a href="https://facebook.com/ViWelcomesYou" target="_blank">
-              <i class="ph ph-facebook-logo"></i>
-            </a>
-            <a href="https://instagram.com/ViWelcomesYou" target="_blank">
-              <i class="ph ph-instagram-logo"></i>
-            </a>
-            <a href="https://linkedin.com/company/ViWelcomesYou" target="_blank">
-              <i class="ph ph-linkedin-logo"></i>
-            </a>
-          </div>
+          <a href="https://facebook.com/ViWelcomesYou" target="_blank">
+            <i class="ph ph-facebook-logo"></i>
+          </a>
+          <a href="https://instagram.com/ViWelcomesYou" target="_blank">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+          <a href="https://linkedin.com/company/ViWelcomesYou" target="_blank">
+            <i class="ph ph-linkedin-logo"></i>
+          </a>
+        </div>
       </div>
 
       <div class="contact">
         <h1 class="contactUs">ContactUs</h1>
         <div class="contactDetails">
-            <a href="mailto:r0879836@student.thomasmore.be" target="_blank">
-              <i class="ph ph-envelope"></i>
-            </a>
+          <i class="ph ph-envelope"></i>
+          <a href="mailto:r0879836@student.thomasmore.be" target="_blank">
             <p class="email">vi@contact.com</p>
-          </div>
-          
+          </a>
+        </div>
       </div>
 
       <div class="newsLetter">
         <h1 class="contactUs">Stay in Touch</h1>
         <div class="newsLetterForm">
-            <!-- i want to make a newsletter form  -->
-            <form action="#" method="post">
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
-              <button type="submit">Subscribe</button>
+          <!-- i want to make a newsletter form  -->
+          <form id="form">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
@@ -287,6 +307,9 @@
       }
       document.addEventListener("DOMContentLoaded", initSwiper);
       window.addEventListener("resize", initSwiper);
+      const form = document.getElementById("form");
+
+      form.onsubmit((e) => e.preventDefault());
     </script>
   </body>
 </html>
