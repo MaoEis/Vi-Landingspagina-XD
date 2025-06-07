@@ -25,7 +25,8 @@ nav {
 .navDesktop {
   display: none;
 }
-.getStarted {
+.getStarted,
+.downloadNowBtn {
   display: inline-block;
   background-color: #21452f;
   color: #ddeee3;
@@ -297,6 +298,91 @@ h2 {
   max-width: 600px;
 }
 
+.prices {
+  background-color: #d5e9dd;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 80px 0;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.freemium {
+  border: 2px solid #21452f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+  height: 525px;
+  padding-bottom: 70px;
+}
+
+.nameoption {
+  font-size: 2rem;
+  color: #21452f;
+  font-weight: 700;
+  text-align: center;
+}
+.priceoption {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.amount {
+  font-size: 2.5rem;
+  color: #21452f;
+  font-weight: 700;
+}
+
+.amount,
+.perMonth {
+  margin: 20px 0;
+}
+
+.included {
+  color: #21452f;
+  font-weight: 600;
+}
+
+.premium {
+  border: 2px solid #21452f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+  height: 525px;
+  padding-bottom: 70px;
+  background-color: #fdfdfd;
+}
+
+.downloadNowBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fdfdfd;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #21452f;
+  text-align: center;
+}
+
 @media (min-width: 769px) {
   .hamburger {
     display: none;
@@ -454,6 +540,16 @@ h2 {
   .downloadImage {
     width: 50vw;
     height: auto;
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin: 40px 0;
   }
 }
 
