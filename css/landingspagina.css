@@ -395,6 +395,7 @@ h2 {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+  margin-bottom: 80px;
 }
 
 .titleDownload {
@@ -414,6 +415,11 @@ h2 {
   width: 80%;
   max-width: 600px;
 }
+
+footer {
+  display: none;
+}
+
 @media (min-width: 769px) {
   .hamburger {
     display: none;
@@ -585,6 +591,64 @@ h2 {
 
   .titleDownload {
     font-size: 4em;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px 0 40px 0px;
+    background-color: #ddeee3;
+    color: #21452f;
+  }
+
+  .socialIcons,
+  .contactDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .contactDetails {
+    align-items: center;
+  }
+  .email {
+    margin: 0;
+  }
+
+  .ph {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #21452f;
+    text-decoration: none;
+    font-size: 30px;
+    transition: transform 0.2s ease;
+  }
+
+  .ph:hover {
+    transform: scale(1.1);
+    color: #3a6b4f; /* slightly lighter green on hover */
+  }
+
+  input {
+    border: 2px solid #21452f;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 1em;
+  }
+
+  button {
+    background-color: #21452f;
+    color: #ddeee3;
+    padding: 7px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
   }
 }
 

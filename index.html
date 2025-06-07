@@ -18,6 +18,8 @@
       src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
       defer
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+
   </head>
   <body>
     <main>
@@ -27,8 +29,8 @@
         </div>
         <div class="DesktopNavCombined">
           <nav class="navDesktop" id="navDesktop">
-            <a class="WhatWeDo" href="#">Projects</a>
-            <a class="About" href="#">About</a>
+            <a class="WhatWeDo" href="#">About</a>
+            <a class="About" href="#">Prices</a>
             <a class="Contact" href="#">Contact</a>
           </nav>
           <a class="getStarted" href="#">Get Started</a>
@@ -40,8 +42,8 @@
           <span></span>
         </div>
         <nav class="navMobile" id="navMobile">
-          <a class="WhatWeDo" href="#">Projects</a>
-          <a class="About" href="#">About</a>
+          <a class="WhatWeDo" href="#">About</a>
+          <a class="About" href="#">Prices</a>
           <a class="Contact" href="#">Contact</a>
         </nav>
       </nav>
@@ -203,63 +205,50 @@
       </div>
     </section>
 
-    
     <footer>
-      <div class="follow">
-        <h1 class="followus"></h1>
+      <div class="followusContent">
+        <h1 class="followus">Follow Us</h1>
         <div class="socialIcons">
-          <a href="https://facebook.com/ViWelcomesYou" target="_blank">
-            <img src="./assets/facebook.png" alt="Facebook" />
-          </a>
-          <a href="https://instagram.com/ViWelcomesYou" target="_blank">
-            <img src="./assets/instagram.png" alt="Instagram" />
-          </a>
-          <a href="https://linkedin.com/company/ViWelcomesYou" target="_blank">
-            <img src="./assets/linkedin.png" alt="LinkedIn" />
-          </a>
-        </div>
+            <a href="https://facebook.com/ViWelcomesYou" target="_blank">
+              <i class="ph ph-facebook-logo"></i>
+            </a>
+            <a href="https://instagram.com/ViWelcomesYou" target="_blank">
+              <i class="ph ph-instagram-logo"></i>
+            </a>
+            <a href="https://linkedin.com/company/ViWelcomesYou" target="_blank">
+              <i class="ph ph-linkedin-logo"></i>
+            </a>
+          </div>
       </div>
 
       <div class="contact">
         <h1 class="contactUs">ContactUs</h1>
-        <div class="socialIcons">
-          <a href="https://facebook.com/ViWelcomesYou" target="_blank">
-            <img src="./assets/facebook.png" alt="Facebook" />
-          </a>
-          <a href="https://instagram.com/ViWelcomesYou" target="_blank">
-            <img src="./assets/instagram.png" alt="Instagram" />
-          </a>
-          <a href="https://linkedin.com/company/ViWelcomesYou" target="_blank">
-            <img src="./assets/linkedin.png" alt="LinkedIn" />
-          </a>
-        </div>
+        <div class="contactDetails">
+            <a href="mailto:r0879836@student.thomasmore.be" target="_blank">
+              <i class="ph ph-envelope"></i>
+            </a>
+            <p class="email">vi@contact.com</p>
+          </div>
+          
       </div>
+
       <div class="newsLetter">
-        <h1 class="contactUs">ContactUs</h1>
-        <div class="socialIcons">
-          <a href="https://facebook.com/ViWelcomesYou" target="_blank">
-            <img src="./assets/facebook.png" alt="Facebook" />
-          </a>
-          <a href="https://instagram.com/ViWelcomesYou" target="_blank">
-            <img src="./assets/instagram.png" alt="Instagram" />
-          </a>
-          <a href="https://linkedin.com/company/ViWelcomesYou" target="_blank">
-            <img src="./assets/linkedin.png" alt="LinkedIn" />
+        <h1 class="contactUs">Stay in Touch</h1>
+        <div class="newsLetterForm">
+            <!-- i want to make a newsletter form  -->
+            <form action="#" method="post">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <button type="submit">Subscribe</button>
           </a>
         </div>
       </div>
-
-      <p>&copy; 2023 ViWelcomesYou. All rights reserved.</p>
-
-      <p>
-        Follow us on <a href="https://twitter.com/ViWelcomesYou">Twitter</a> and
-        <a href="https://facebook.com/ViWelcomesYou">Facebook</a>.
-      </p>
-      <p>
-        Contact us at
-        <a href="mailto:info@viwelcomesyou.com">info@viwelcomesyou.com</a>.
-      </p>
     </footer>
+
     <script>
       const hamburger = document.getElementById("hamburger");
       const navMobile = document.getElementById("navMobile");
