@@ -745,7 +745,7 @@ html {
     height: auto;
     top: 995px;
     left: 60vw;
-    transform: translateX(-50%); /* center relative to the left */
+    transform: translateX(-80%) translateY(25%); /* center relative to the left */
 
     z-index: -1;
     pointer-events: none;
