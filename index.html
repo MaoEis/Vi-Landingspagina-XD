@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViWelcomesYou</title>
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="./css/landingspagina.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav class="navbarMobile">
+        <div class="navLogo">
+          <img src="assets/viLogo.png" alt="ViLogo" />
+        </div>
+        <div class="DesktopNavCombined">
+          <nav class="navDesktop" id="navDesktop">
+            <a class="WhatWeDo" href="#">Projects</a>
+            <a class="About" href="#">About</a>
+            <a class="Contact" href="#">Contact</a>
+          </nav>
+          <a class="getStarted" href="#">Get Started</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="navMobile" id="navMobile">
+          <a class="WhatWeDo" href="#">Projects</a>
+          <a class="About" href="#">About</a>
+          <a class="Contact" href="#">Contact</a>
+        </nav>
+      </nav>
+      <div class="mainContainer">
+        <h1 class="mainTitle">
+          Start with one small step toward your balance today.
+        </h1>
+        <div class="mainContent">
+          <p class="mainDescription">One small step is all it takes.</p>
+          <a class="mainGetStarted" href="#">Get Started</a>
+        </div>
+      </div>
+    </main>
+
+    <section class="achievingSection">
+      <h2 class="achieving">What We Achieve Together</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/Check-in.png" alt="Check In Image" />
+            <h2>Check in</h2>
+            <p class="achievingDescriptions">
+              Fill your daily check-in. How are you feeling? How much energy do
+              you have?
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/activitySug.png" alt="Activity Suggestion" />
+            <h2>Activity suggestion</h2>
+            <p class="achievingDescriptions">
+              Suggestions based on likes, dislikes, emotion and energy levels.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/balance.png" alt="Progress Image" />
+            <h2>See your progress</h2>
+            <p class="achievingDescriptions">
+              Track which activity feeds you most and see your energy rise.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p>We are dedicated to providing the best services to our customers.</p>
+    </section>
+    <footer>
+      <p>&copy; 2023 ViWelcomesYou. All rights reserved.</p>
+      <p>
+        Follow us on <a href="https://twitter.com/ViWelcomesYou">Twitter</a> and
+        <a href="https://facebook.com/ViWelcomesYou">Facebook</a>.
+      </p>
+      <p>
+        Contact us at
+        <a href="mailto:info@viwelcomesyou.com">info@viwelcomesyou.com</a>.
+      </p>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMobile = document.getElementById("navMobile");
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        navMobile.classList.toggle("show");
+      });
+
+      function hideMenu() {
+        navMobile.classList.remove("show");
+        hamburger.classList.remove("active");
+      }
+      document.querySelectorAll(".navMobile a").forEach((link) => {
+        link.addEventListener("click", hideMenu);
+      });
+
+      let swiperInstance;
+
+      function initSwiper() {
+        if (window.innerWidth < 769 && !swiperInstance) {
+          swiperInstance = new Swiper(".mySwiper", {
+            direction: "horizontal",
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        } else if (window.innerWidth >= 769 && swiperInstance) {
+          swiperInstance.destroy(true, true);
+          swiperInstance = null;
+        }
+      }
+      document.addEventListener("DOMContentLoaded", initSwiper);
+      window.addEventListener("resize", initSwiper);
+    </script>
+  </body>
+</html>
