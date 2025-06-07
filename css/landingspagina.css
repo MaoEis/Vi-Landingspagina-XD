@@ -319,9 +319,9 @@ h2 {
 }
 
 .freemium {
-  border: 2px solid #21452f;
+  border: 3px solid #21452f;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 80%;
   max-width: 400px;
   position: relative;
@@ -360,9 +360,9 @@ h2 {
 }
 
 .premium {
-  border: 2px solid #21452f;
+  border: 3px solid #21452f;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 80%;
   max-width: 400px;
   position: relative;
@@ -371,7 +371,8 @@ h2 {
   background-color: #fdfdfd;
 }
 
-.downloadNowBtn {
+.downloadNowBtn,
+.downloadNowBtnless {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -381,6 +382,10 @@ h2 {
   border-radius: 6px;
   background-color: #21452f;
   text-align: center;
+}
+.downloadNowBtnless {
+  background-color: #346447;
+  text-decoration: none;
 }
 
 @media (min-width: 769px) {
